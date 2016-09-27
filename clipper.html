@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trailer Ad Clipper</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style type="text/css">
+  .wrapper {
+    width: 300px;
+    margin: 30px auto;
+  }
+  .videoWrapper {
+    position: relative;
+    height: 180px;
+  }
+  #loadingImage {
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 180px;
+  }
+  </style>
+</head>
+<body>
+ 
+<div class="wrapper">
+  <div class="videoWrapper"> 
+    <img src="http://media.jrn.com/designimages/loading_comments.gif" id="loadingImage" />
+    <video autoplay id="videoPreview">  
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4#t=0,3" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="timeRangeClipper"></div>
+
+  <p>
+    <label for="timeRange">Time:</label>
+    <input type="text" id="timeRange" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  </p>
+</div>
+ 
+</body>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var video = document.getElementById('videoPreview');
+    var timeInterval = window.setInterval(function (t) {
+      if (video.readyState > 0) {
+        
+        clearInterval(timeInterval);
+      
+        function displayClippedTime (t0) {
+          return t0 + "s-" +  (t0 + 3) + "s"
+        }
+
+        $( "#timeRangeClipper" ).slider({
+          min: 0,
+          max: Math.round(video.duration),
+          value: 0,
+          step: 3,
+          slide: function( event, ui ) {
+            $("#timeRange").val(displayClippedTime(ui.value));
+            $("#videoPreview").html('<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4#t='+ui.value+','+(ui.value+3)+'" type="video/mp4" width="300px">').load();
+          }
+        });
+        $("#timeRange").val( displayClippedTime($("#timeRangeClipper").slider("value")));
+        
+      }
+    },500);
+  } );
+  </script>
+
+</html>
