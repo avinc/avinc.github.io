@@ -4389,6 +4389,12 @@
 			video.load();
 			video.play();
 		});
+
+        $("html").click(function(e) {
+			location.reload();
+			e.preventDefault();
+		});
+
    
     });
     </script>
