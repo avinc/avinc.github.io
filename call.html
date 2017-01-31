@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+		body {
+			background-color: #f9f9f9;
+		}
+		.logo {
+			width: 200px;
+			margin: 0 auto;
+			margin-top: 20%;
+		}
+		.logo img {
+			width: 100%;
+		}
+	</style>
 	<script type="text/javascript">
-	function getParameterByName(name, url) {
-	    if (!url) {
-	      url = window.location.href;
-	    }
-	    name = name.replace(/[\[\]]/g, "\\$&");
-	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-	        results = regex.exec(url);
-	    if (!results) return null;
-	    if (!results[2]) return '';
-	    return decodeURIComponent(results[2].replace(/\+/g, " "));
-	}
-	phnum = getParameterByName('phnum');
-	location.href="tel://" + phnum;
+		function getParameterByName(name, url) {
+		    if (!url) {
+		      url = window.location.href;
+		    }
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		        results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+		phnum = getParameterByName('phnum');
+		document.getElementById('message').style.display = 'none';
+		location.href="tel://" + phnum;
 	</script>
 </head>
 <body>
+	<div class="logo"><img src="https://nationwidefinancial.com/media/images/ssc/header-logo.svg"></div>
+	<p align="center" id="message"> Please wait.. </p>
 </body>
 </html>
