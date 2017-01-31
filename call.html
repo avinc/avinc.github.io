@@ -28,7 +28,7 @@
 		    return decodeURIComponent(results[2].replace(/\+/g, " "));
 		}
 		phnum = getParameterByName('phnum');
-		if (document !== null) {
+		if (document.getElementById('message') !== null) {
 			document.getElementById('message').style.display = 'none';
 		}
 		location.href="tel://" + phnum;
