@@ -23,7 +23,7 @@ $(document).ready(function(e) {
     },
     tumblrad : {
       title : "Tumblr Sponsored post",
-      img : ["./images/mocks/MailAdMobileGIF.gif"],
+      img : ["./images/mocks/Tumblrpost-Carousel.mp4"],
       infotext : "This is lorem text"
     },
     carouselad : {
