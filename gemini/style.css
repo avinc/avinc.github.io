@@ -39,10 +39,10 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #8c28e5;
+    background-color: #7205f2;
 }
 
-.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; color: #8c28e5; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; color: #7205f2; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .slick-prev, .slick-next {width: 0px;height: auto;}
 .slick-prev:before { content: "‹"; }
 [dir="rtl"] .slick-prev:before { content: "›"; }
@@ -69,7 +69,7 @@ p {
 #menu .btn-pill {
     border-radius: 20px;
     padding: 5px 20px;
-    background: #8c28e5;
+    background: #7205f2;
     color: #fff;
     margin: 10px 0;
     text-decoration: none;
@@ -94,7 +94,7 @@ p {
     background: url(images/bg-pattern.png),-webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
     background: url(images/bg-pattern.png),linear-gradient(48deg, #6c00f6 05%, #a330d3 95%);
     color: #fff;
-    padding: 160px 0px;
+    padding: 160px 0 0 0;
 }
 
 #header h1 {
@@ -135,13 +135,65 @@ section .container {
     padding: 40px 0;
 }
 
+#header .container {
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
 section .container .img-frame {
     border: 1px solid #e3e3e3;
 }
 
-#tutorials {
-    
+.variant-hero-screen {
+    position: relative;
+    display: inline-block;
+    position: relative;
 }
+
+.screen-image {
+    display: inline-block;
+    margin-top: -400px;
+    position: relative;
+    top: 450px;
+    opacity: 1;
+    width: 100%;
+    max-width: 850px;
+}
+
+.variant-hero-screen:hover .screen-image {
+    top: 325px;
+}
+
+.variant-hero-screen .btn {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 99;
+    margin: 0 auto;
+    transform: translateY(210px);
+    -webkit-transform: translateY(210px);
+    -moz-transform: translateY(210px);
+    box-shadow: 0px 0px 5px 1px #b1b1b1;
+    -webkit-box-shadow: 0px 0px 40px 12px #b1b1b1;
+    -moz-box-shadow: 0px 0px 5px 1px #b1b1b1;
+    background: #7205f2;
+    color: white;
+    font-weight: 300;
+    border-radius: 25px;
+}
+
+.variant-hero-screen:hover .btn, .variant-hero-screen .btn:hover {
+    top: -80px;
+    left: 35%;
+}
+
+.transition-300 {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
 
 .tutorialvideos>div:hover {
     cursor: pointer;
@@ -232,7 +284,7 @@ section .container .img-frame {
 .card .pill {
     position: absolute;
     top: 5px;
-    background: #8c28e5;
+    background: #7205f2;
     border-radius: 3px;
     left: 5px;
     padding: 2px 5px;
