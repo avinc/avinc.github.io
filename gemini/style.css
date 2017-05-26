@@ -94,7 +94,7 @@ p {
     background: url(images/bg-pattern.png),-webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
     background: url(images/bg-pattern.png),linear-gradient(48deg, #6c00f6 05%, #a330d3 95%);
     color: #fff;
-    padding: 160px 0 0 0;
+    padding: 80px 0 0 0;
 }
 
 #header h1 {
