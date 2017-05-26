@@ -147,6 +147,13 @@ section .container .img-frame {
     cursor: pointer;
 }
 
+.tutorialvideos span.tutorial-title {
+    display: block;
+    margin: 0 10px;
+    margin-top: -8px;
+    font-weight: 500;
+    font-size: 12px;
+}
 
 .slick-slide {
     position: relative;
@@ -275,14 +282,42 @@ footer ul li a:hover, footer ul li a:visited {
     color: #fff;
 }
 
-
 .modal-content {
-    background-color: transparent;
     border-radius: 0;
     border: none;
     box-shadow: none;
 }
 
+#vimeoModal .modal-content {
+    background-color: transparent;
+}
+
+#adformatModal .modal-header {
+    background-color: white;
+}
+
+#adformatModal .modal-content {
+    max-height: 700px;
+    overflow: scroll;
+    text-align: center;
+    background-color: #fff;
+}
+
+#adformatModal .modal-content video {
+    height: 500px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 10px solid #000;
+    border-radius: 25px;
+    border-width: 40px 10px 40px 10px;
+}
+
+#adformatModal .modal-content .infotext {
+    text-align: left;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+    padding-top: 10px;
+}
 
 @media (max-width: 800px) {
     section .container {
