@@ -76,7 +76,7 @@ $(document).ready(function(e) {
     adid = $(this).attr('data-adformatid');
     $('#adformatModal .modal-title').html(adformatinfo[adid].title);
     // $('#adformatModal .modal-body').html('<img src="' + adformatinfo[adid].img[0] + '"/><p class="infotext">' + adformatinfo[adid].infotext + '</p>');
-    $('#adformatModal .modal-body').html('<video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay/><p class="infotext"></video>' + adformatinfo[adid].infotext + '</p>');
+    $('#adformatModal .modal-body').html('<div class="row"><div class="col-sm-6"><video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay/></div><div class="col-sm-6"><p class="infotext"></video>' + adformatinfo[adid].infotext + '</p></div>');
     $("#adformatModal").modal('show');
     e.preventDefault();
     e.stopPropagation();
