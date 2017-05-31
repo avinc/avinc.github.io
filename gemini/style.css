@@ -43,12 +43,13 @@ p {
 }
 
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 40px; color: #7205f2; opacity: 0.75; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.slick-prev, .slick-next {width: 0px;height: auto;}
+.slick-prev, .slick-next {width: 0px;height: auto; top: 40%;}
 .slick-prev:before { content: "‹"; }
 [dir="rtl"] .slick-prev:before { content: "›"; }
 [dir="rtl"] .slick-next { left: -10px; top: 40px; right: auto; }
 .slick-next:before { content: "›"; }
 [dir="rtl"] .slick-next:before { content: "‹"; }
+.slick-next { right: -15px; }
 
 
 /** Menu Styles **/
@@ -81,6 +82,10 @@ p {
 
 #menu .logo {
     width: 200px;
+}
+
+#menu .navbar-right {
+    margin-right: 0;
 }
 
 /** Header Styles **/
@@ -232,7 +237,7 @@ section .container .img-frame {
     max-width: 250px;
 }
 
-#adformats, #accountsync {
+#adformats, #accountsync, #quotes {
     background-color: #f3f3f3;
     border: .2rem solid #d8dade;
 }
@@ -370,6 +375,8 @@ footer ul li a:hover, footer ul li a:visited {
     padding-top: 10px;
 }
 
+
+/* Table */
 @media (max-width: 800px) {
     section .container {
         padding: 20px;
@@ -377,4 +384,70 @@ footer ul li a:hover, footer ul li a:visited {
     .cards {
         text-align: center;
     }
+    #header {
+        padding: 120px 0 110px 0;
+    }
 }
+/* Mobile */
+@media (max-width: 400px) {
+    .card {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    #accountsync img, #getintouch img {
+        margin-bottom : 20px;
+    }
+}
+
+
+/* Testimonials Quotes */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
