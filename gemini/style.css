@@ -30,6 +30,10 @@ p {
     overflow: hidden;
 }
 
+.no-border {
+    border: none !important;
+}
+
 .btn-primary {
     background-color: #1a81e4;
     border: 0px;
@@ -95,11 +99,12 @@ p {
     width: 100%;
     min-height: auto;
     overflow-y: hidden;
-    background: url(images/bg-pattern.png),#7b4397;
-    background: url(images/bg-pattern.png),-webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-    background: url(images/bg-pattern.png),linear-gradient(48deg, #6c00f6 05%, #a330d3 95%);
+    background: url(images/background.jpg) no-repeat center center fixed, #081a3e;
+    background: url(images/background.jpg) no-repeat,-webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+    background: url(images/background.jpg) no-repeat,linear-gradient(48deg, #6c00f6 05%, #a330d3 95%);
     color: #fff;
     padding: 160px 0 0 0;
+    background-size: cover;
 }
 
 #header h1 {
