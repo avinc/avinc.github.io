@@ -13,7 +13,7 @@ $(document).ready(function(e) {
     },
     videoad : {
       title : "Video Ad",
-      img : ["./images/mocks/MailAdMobileGIF.gif"],
+      img : ["./images/mocks/videoAds.mp4"],
       infotext : "This is lorem text"
     },
     appinstallad : {
@@ -76,7 +76,7 @@ $(document).ready(function(e) {
     adid = $(this).attr('data-adformatid');
     $('#adformatModal .modal-title').html(adformatinfo[adid].title);
     // $('#adformatModal .modal-body').html('<img src="' + adformatinfo[adid].img[0] + '"/><p class="infotext">' + adformatinfo[adid].infotext + '</p>');
-    $('#adformatModal .modal-body').html('<div class="row"><div class="col-sm-6"><video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay/></div><div class="col-sm-6"><p class="infotext"></video>' + adformatinfo[adid].infotext + '</p></div>');
+    $('#adformatModal .modal-body').html('<div class="row"><div class="col-sm-6"><video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay controls/></div><div class="col-sm-6"><p class="infotext"></video>' + adformatinfo[adid].infotext + '</p></div>');
     $("#adformatModal").modal('show');
     e.preventDefault();
     e.stopPropagation();
