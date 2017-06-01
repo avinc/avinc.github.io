@@ -380,6 +380,11 @@ footer ul li a:hover, footer ul li a:visited {
     padding-top: 10px;
 }
 
+#adformatModal .modal-content .infotext li {
+    text-align: left;
+    list-style-type: disc;
+}
+
 
 /* Table */
 @media (max-width: 800px) {
