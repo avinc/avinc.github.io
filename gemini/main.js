@@ -4,7 +4,7 @@ $(document).ready(function(e) {
     searchad : {
       title : "Search Link Ad",
       img : ["./images/mocks/searchAds.mp4"],
-      infotext : "<p>Search on Native ads can feature up to two sitelinks with individual images from search ads. Each ad will link to the corresponding landing page specified in their search ads.</p>"
+      infotext : "<p>Search ads are highly relevant ads that reach searchers on Yahoo at the moment of intent.</p><ul><li><p>Yahoo Search reaches over <b>117M unique searchers per month</b>, 33% of which can't be found on other engines</p></li></ul>"
     },
     imagead : {
       title : "Image Ad",
@@ -14,7 +14,7 @@ $(document).ready(function(e) {
     videoad : {
       title : "Video Ad",
       img : ["./images/mocks/videoAds.mp4"],
-      infotext : "<p>Native Video Ads are clickable video ads that fit the form and function of the content around them, such as within the content stream on Yahoo properties, apps, and third-party publishers.</p><ul><li><p>Native Video Ads view and completion rates outperform the industry average.</li><li>Native Video Ads drove a <b>50% lift in brand favorability and 28% lift in purchase intent</b> for a retail brand in a recent study.</p></li></ul>"
+      infotext : "<p>Native Video Ads are clickable video ads that fit the form and function of the content around them, such as within the content stream on Yahoo properties, apps, and third-party publishers.</p><ul><li><p>Native Video Ads view and completion rates have outperformed industry averages.</li><li>Native Video Ads drove a <b>50% lift in brand favorability and 28% lift in purchase intent</b> for a retail brand in a recent study.</p></li></ul>"
     },
     appinstallad : {
       title : "App Install Ad",
@@ -34,7 +34,7 @@ $(document).ready(function(e) {
     mailad : {
       title : "Mail Ad",
       img : ["./images/mocks/MailAd.mp4"],
-      infotext : "Yahoo Gemini Mail Ads turn the prominently placed top ad in the user’s inbox into a truly native ad that can be read, saved or forwarded, just like an email.<ul><li><p>Mail Ads have shown click-through rates as high as 4x industry averages.</p></li></ul>"
+      infotext : "Yahoo Gemini Mail Ads turn the prominently placed top ad in the user’s inbox into a truly native ad that can be read, saved or forwarded, just like an email.<ul><li><p>Mail Ads have shown <b>click-through rates as high as 4x industry averages.</b></p></li></ul>"
     }
   };
 
