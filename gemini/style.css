@@ -100,8 +100,6 @@ p {
     min-height: auto;
     overflow-y: hidden;
     background: url(images/background.jpg) no-repeat center center fixed, #081a3e;
-    background: url(images/background.jpg) no-repeat,-webkit-linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-    background: url(images/background.jpg) no-repeat,linear-gradient(48deg, #6c00f6 05%, #a330d3 95%);
     color: #fff;
     padding: 160px 0 0 0;
     background-size: cover;
@@ -395,7 +393,7 @@ footer ul li a:hover, footer ul li a:visited {
         text-align: center;
     }
     #header {
-        padding: 120px 0 110px 0;
+        padding: 120px 0 0px 0;
     }
     #menu .btn-pill {
         border-radius: 0;
@@ -407,7 +405,9 @@ footer ul li a:hover, footer ul li a:visited {
         width: 320px;
         max-width: 320px;
     }
-
+    #header {
+        padding: 100px 0 60px 0;
+    }
     #accountsync img, #getintouch img {
         margin-bottom : 20px;
     }

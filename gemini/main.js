@@ -4,7 +4,7 @@ $(document).ready(function(e) {
     searchad : {
       title : "Search Link Ad",
       img : ["https://s.yimg.com/av/moneyball/assets/v3/images/mocks/searchAds.mp4"],
-      infotext : "<p>Search ads are highly relevant ads that reach searchers on Yahoo at the moment of intent.</p><ul><li><p>Yahoo Search reaches over <b>117M unique searchers per month</b>, 33% of which can't be found on other engines</p></li></ul>"
+      infotext : "<p>Search ads are highly relevant ads that reach searchers on Yahoo at the moment of intent.</p><ul><li><p>Yahoo Search reaches over <b>117M unique searchers per month</b>, 22% of which can't be found on other engines</p></li></ul>"
     },
     imagead : {
       title : "Image Ad",
@@ -76,7 +76,7 @@ $(document).ready(function(e) {
     adid = $(this).attr('data-adformatid');
     $('#adformatModal .modal-title').html(adformatinfo[adid].title);
     // $('#adformatModal .modal-body').html('<img src="' + adformatinfo[adid].img[0] + '"/><p class="infotext">' + adformatinfo[adid].infotext + '</p>');
-    $('#adformatModal .modal-body').html('<div class="row"><div class="col-sm-6"><video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay controls/></div><div class="col-sm-6"></video><div class="infotext">' + adformatinfo[adid].infotext + '</div></div>');
+    $('#adformatModal .modal-body').html('<div class="row"><div class="col-sm-6"><video type="video/mp4" src="' + adformatinfo[adid].img[0] + '" loop muted autoplay playsinline/></div><div class="col-sm-6"></video><div class="infotext">' + adformatinfo[adid].infotext + '</div></div>');
     $("#adformatModal").modal('show');
     e.preventDefault();
     e.stopPropagation();
